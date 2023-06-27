@@ -1,0 +1,31 @@
+spring:
+  security:
+    user:
+      name: u
+      password: p
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.102.254:3306/tiger
+    username: root
+    password: Ep^ks5h3S@c@xk
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+  data:
+    redis:
+      host: 192.168.102.254
+      port: 6379
+      database: 0
+      password: fs@vw7qA$o*^wo
+      lettuce:
+        pool:
+          # 最大链接
+          max-active: 300
+          # 最大空闲
+          max-idle: 100
+          # 最小空闲
+          min-idle: 5
+pig:
+  token:
+    timeout: 600
